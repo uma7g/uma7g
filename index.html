@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umang Pandya — Sr. 3D Artist & Game Designer</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Model Viewer (for 3D GLB display) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<!-- ── NAV ─────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">Umang.dev</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li> 
+  </ul>
+</nav>
+
+
+<!-- ── HERO ─────────────────────────────────────────────────── -->
+<div id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Available for Work</div>
+    <h1 class="hero-name">Umang Pandya</h1>
+    <div class="hero-role">Sr. 3D Artist · Game Designer · Animator</div>
+    <p class="hero-desc">Crafting immersive worlds, stunning 3D visuals, and fluid animations that bring games and stories to life.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+      <a href="about.html" class="btn-outline btn-story">My Story</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── HERO 3D MODEL ────────────────────────────────────────── -->
+<div class="hero-model">
+  <model-viewer
+    id="heroCharacter"
+    src="models/magic_frog.glb"
+    alt="3D Character"
+    auto-rotate
+    rotation-per-second="15deg"
+    autoplay
+    animation-name="*"
+    camera-controls
+    disable-zoom
+    disable-pan
+    shadow-intensity="1"
+    style="width:700px; height:700px; background:transparent;">
+  </model-viewer>
+</div>
+
+
+
+<!-- ── ABOUT ────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-avatar">🎮</div>
+    <div class="about-text">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Passionate about<br/>3D &amp; Game Art</h2>
+      <div class="section-line"></div>
+      <p>I'm a Senior 3D Artist and Game Designer with a deep passion for creating immersive environments, characters, and animations. With years of experience across the game development pipeline, I bring creative visions to life.</p>
+      <p>From concept to final render, I specialize in high-quality 3D modeling, rigging, and animation for games, cinematics, and interactive experiences.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Games Built</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ────────────────────────────────────────────────── -->
+<div id="skills">
+  <div id="skills-inner">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Skills &amp; Tools</h2>
+    <div class="section-line"></div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🧊</div>
+        <div class="skill-name">Maya</div>
+        <div class="skill-level"><div class="skill-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📐</div>
+        <div class="skill-name">3ds Max</div>
+        <div class="skill-level"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🫐</div>
+        <div class="skill-name">Blender</div>
+        <div class="skill-level"><div class="skill-fill" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎮</div>
+        <div class="skill-name">Unity</div>
+        <div class="skill-level"><div class="skill-fill" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Unreal Engine</div>
+        <div class="skill-level"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎬</div>
+        <div class="skill-name">Animation</div>
+        <div class="skill-level"><div class="skill-fill" style="width:92%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PROJECTS ──────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="section-label">Work</div>
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="section-line"></div>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-thumb t1">🗺️</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Unreal Engine</span>
+          <span class="project-tag">3D</span>
+        </div>
+        <div class="project-title">Open World RPG Environment</div>
+        <p class="project-desc">A full open-world landscape built in Unreal Engine 5 with dynamic lighting, foliage systems, and cinematic atmosphere.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb t2">🤖</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Maya</span>
+          <span class="project-tag">Animation</span>
+        </div>
+        <div class="project-title">Character Rig &amp; Animation</div>
+        <p class="project-desc">Full character rigging and animation pipeline for a sci-fi game — including walk cycles, combat, and facial expressions.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-thumb t3">🏙️</div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Blender</span>
+          <span class="project-tag">Unity</span>
+        </div>
+        <div class="project-title">Stylized City Scene</div>
+        <p class="project-desc">A stylized low-poly city environment crafted in Blender and exported to Unity with optimized asset pipeline.</p>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────────────── -->
+<div id="contact">
+  <div id="contact-inner">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's Work Together</h2>
+    <div class="section-line"></div>
+    <p class="contact-desc">Have a project in mind? I'd love to collaborate on your next game, film, or 3D experience.</p>
+    <a href="mailto:umangpandya3@gmail.com" class="contact-email">umangpandya3@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/uma7g/" target="_blank" class="contact-link">🔗 LinkedIn</a>
+      <a href="https://www.artstation.com/uma7g" target="_blank" class="contact-link">🎨 ArtStation</a>
+      <a href="https://www.youtube.com/@Bullish-UP" target="_blank" class="contact-link">▶️ YouTube</a>
+    </div>
+    <a href="assets/documents/My_resume_2026.pdf" target="_blank" class="btn-primary">Download Resume</a>
+  </div>
+</div>
+
+<!-- ── FOOTER ────────────────────────────────────────────────── -->
+<footer>
+  <p>© 2026 Umang Pandya · Sr. 3D Artist &amp; Game Designer · Built with passion</p>
+</footer>
+
+<!-- Main Script -->
+<script src="js/main.js"></script>
+
+<!-- ── My Story ───────────────────────────────────────────────── -->
+<div id="story">
+  <div id="story-inner">
+      <div class="story-links">
+      <a href="about.html">My Story</a>
+    </div>
+    
+</div>
+
+
+</body>
+</html>
+
+
+
+
