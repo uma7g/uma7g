@@ -105,13 +105,13 @@ section { padding: 6rem 4rem; max-width: 1100px; margin: 0 auto; }
   position: absolute;
   right: 3%;
   bottom: 0%;
-  width: 60vw;
+  width: 45vw;
   height: 70vh;
   max-width: 1900px;
   max-height: 1900px;
   min-width: 250px;
   min-height: 300px;
-  z-index: 2;
+  z-index: 1;
   filter: drop-shadow(0 0 60px rgba(124,92,252,0.4));
   pointer-events: auto;
 }
@@ -243,9 +243,9 @@ footer {
 /* ── RESPONSIVE ────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-model {
-    width: min(45vw, 500px);
-    height: min(70vh, 650px);
-    right: -2%;
+    width: min(45px, 500px);
+    height: min(60px, 500px);
+    right: -3%;
   }
 }
 
@@ -520,6 +520,37 @@ footer {
 /* ********************************************* */
 
 
+.hero-note{
+  margin-top:16px;
+  max-width:600px;
+  color:#b8b8b8;
+  font-size:0.95rem;
+  line-height:1.8;
+}
 
+.btn-story{
+  border: 1px solid #22c55e;
+  color: #22c55e;
+}
 
+.btn-story:hover{
+  background: #22c55e;
+  color: #fff;
+  border-color: #22c55e;
+}
 
+.nav-back{
+  background: rgba(124,92,252,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.nav-back:hover{
+  background: #7c5cfc;
+  border-color: #7c5cfc;
+  color: #fff;
+  transform: translateY(-2px);
+}
